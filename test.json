@@ -1,0 +1,30 @@
+[
+    {
+      "id": "1 OR 1=1", 
+      "column_id": "123", 
+      "title": "<script>alert('XSS')</script>", 
+      "description": "", 
+      "owner_id": "null",
+      "blocked_by_card_ids": ["<img src=x onerror=alert('XSS')>"],
+      "blocks_card_ids": ["<img src=x onerror=alert('XSS')>"],
+      "checklists": [
+        {
+          "name": "Test checklist",
+          "items": [
+            {
+              "text": "test-",
+              "checked": false
+            }
+          ]
+        }
+      ],
+      "created": "2023-10-03T12:34:56Z",
+      "due_date": null,
+      "links": [
+        {
+          "url": "javascript:alert('XSS')"
+        }
+      ]
+    }
+  ]
+  
